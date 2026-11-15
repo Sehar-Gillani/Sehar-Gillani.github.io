@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+  Sehar Gillani — Bioinformatics Portfolio (GitHub Pages)
+  =====================================================
+  ALREADY FILLED IN (Nov 6, 2026): GitHub profile, LinkedIn, Week 1 repo
+  (gse70394-deg-python), Week 2 repo (biopython-tp53-week2).
+  CV: not posted on the site (her decision Nov 14, 2026) — do NOT add a CV button.
+  Comments section removed Nov 14, 2026 (her decision) — do NOT re-add it.
+  FIGURE PLACEHOLDERS: each project card has a dashed "figure" box.
+  To use a real figure, replace that whole <div class="fig">...</div> with:
+    <img class="figimg" src="week1-volcano.png" alt="Volcano plot, Week 1">
+  and upload the image file next to index.html.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sehar Gillani — Bioinformatics Portfolio</title>
+<meta name="description" content="Public health researcher building bioinformatics skills in Python — one reproducible project a week, code and figures public on GitHub.">
+<style>
+  :root{
+    --ink:#1c2430; --muted:#5b6b7f; --accent:#0e7a5f; --accent-soft:#e6f4f0;
+    --card:#ffffff; --bg:#f7f9fb; --line:#dde5ee;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px 48px}
+  header{padding:52px 0 8px;border-bottom:3px solid var(--accent)}
+  h1{font-size:2.3rem;margin:0 0 6px;letter-spacing:-.02em}
+  .role{color:var(--accent);font-weight:650;font-size:1.05rem;margin:0 0 10px}
+  .tag{color:var(--muted);max-width:620px;margin:0 0 20px}
+  .btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+  .btn{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:550}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn:hover{filter:brightness(.97)}
+  section{margin-top:34px}
+  h2{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .about{font-size:1rem;max-width:700px;margin:0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .wk{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .card h3{margin:6px 0 8px;font-size:1.08rem}
+  .card p{margin:0 0 12px;color:var(--muted);font-size:.94rem}
+  .fig{height:110px;border:1.5px dashed var(--line);border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.82rem;margin-bottom:12px;text-align:center;padding:8px}
+  .figimg{width:100%;border-radius:10px;border:1px solid var(--line);margin-bottom:12px}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  .tags span{font-size:.74rem;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+  .repo{color:var(--accent);font-weight:600;text-decoration:none;font-size:.9rem}
+  .soon{opacity:.72}
+  .roadmap{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px}
+  .roadmap li{margin:10px 0}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chips span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px;font-size:.88rem}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Sehar Gillani</h1>
+    <p class="role">Public Health Researcher · Bioinformatics in Python</p>
+    <p class="tag">Retouching bioinformatics, polishing it with AI as my teacher. One project a week — code, figures, and honest results, all public.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/Sehar-Gillani">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/sehar-gillani-64208a101">LinkedIn</a>
+      <a class="btn" href="#projects">Projects ↓</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p class="about">Four-plus years of public health research at Aga Khan University Hospital — end-to-end study operations, data quality, and regulatory documentation, including Pakistan site lead for a global healthcare-worker registry and co-author of a published systematic review of the cervical cancer burden in Pakistan (BMC Public Health, 2023). Now building computational skills in Python, one reproducible project at a time. Based in Memphis, TN.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Bioinformatics Projects — Python, one per week</h2>
+    <div class="grid">
+
+      <article class="card">
+        <div class="wk">Week 1 · Complete</div>
+        <h3>Differential Expression, Redone in Python</h3>
+        <p>Rebuilt an <i>H. pylori</i> infection analysis (GSE70394) in Python. The biology replicated the original R analysis — and the honest result was zero significant genes after multiple-testing correction, which is exactly why methods like limma exist.</p>
+        <img class="figimg" src="week1-volcano.png" alt="Volcano plot, Week 1: GSE70394 infected vs control, zero significant genes">
+        <div class="tags"><span>GEOparse</span><span>pandas</span><span>PyDESeq2</span><span>seaborn</span></div>
+        <a class="repo" href="https://github.com/Sehar-Gillani/gse70394-deg-python">View code on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <div class="wk">Week 2 · Complete</div>
+        <h3>Reading DNA with Biopython</h3>
+        <p>Fetched and parsed the TP53 sequence from NCBI: GC content, DNA-to-protein translation, and a pipeline sanity check against the known 393-amino-acid length of the p53 protein.</p>
+        <img class="figimg" src="week2-workflow.png" alt="TP53 workflow, Week 2: fetch NM_000546, read 2,512 bases, cut 1,182-nt CDS, translate 393-aa p53">
+        <div class="tags"><span>Biopython</span><span>Entrez</span><span>FASTA / GenBank</span></div>
+        <a class="repo" href="https://github.com/Sehar-Gillani/biopython-tp53-week2">View code on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <div class="wk">Week 3 · Complete</div>
+        <h3>Survival Analysis on TCGA Cervical Cancer</h3>
+        <p>Kaplan–Meier survival curves on TCGA-CESC clinical data (307 cases). Only 131 patients had a usable follow-up time (72 died, 59 censored) — the other 174 alive patients had no follow-up time and were dropped, stated honestly. Median survival about 850 days: the curve drops fast in the first ~1,000 days, then flattens.</p>
+        <img class="figimg" src="week3-km.png" alt="Kaplan-Meier survival curve, Week 3">
+        <div class="tags"><span>lifelines</span><span>TCGA-CESC</span><span>pandas</span><span>matplotlib</span></div>
+        <a class="repo" href="https://github.com/Sehar-Gillani/tcga-cesc-survival-week3">View code on GitHub →</a>
+      </article>
+
+      <article class="card soon">
+        <div class="wk">Week 7 · Anchor project</div>
+        <h3>Cervical Cancer, in Code</h3>
+        <p>Tumor vs normal differential expression on TCGA-CESC data, including HPV-linked genes — bringing my published cervical cancer research into computation.</p>
+        <div class="fig">Figure placeholder — DEG results (Week 7)</div>
+        <div class="tags"><span>TCGA-CESC</span><span>HPV genes</span></div>
+        <span class="repo">Planned</span>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Also in the series</h2>
+    <ul class="roadmap">
+      <li><strong>Week 4</strong> — Parsing variant files (VCF): filtering by quality, SNP vs indel.</li>
+      <li><strong>Week 5</strong> — Single-cell RNA-seq with scanpy: QC, clustering, UMAP.</li>
+      <li><strong>Week 6</strong> — Machine learning on gene expression with scikit-learn.</li>
+      <li><strong>Week 8</strong> — Capstone: one clean, reproducible mini-pipeline.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="chips">
+      <span>Python</span><span>pandas</span><span>SQL</span><span>Biopython</span>
+      <span>Data cleaning &amp; validation</span><span>Systematic reviews</span>
+      <span>Research data management</span><span>GitHub</span><span>GCP-certified study operations</span>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
